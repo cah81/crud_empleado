@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "cc8a0c5f-fea7-4ff2-adf6-3af95f2629c8",
+		"name": "empleado_historico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21517135"
+	},
+	"item": [
+		{
+			"name": "Crear Empleado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"carlos\",\r\n    \"salario\":1000\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"carlos\",\r\n    \"salario\":1200\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/empleados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empleados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar salario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"carlos\",\r\n    \"salario\":1000\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/empleados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"empleados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
